@@ -22,7 +22,7 @@ grin server run
 epic server run
 
 # ready
-git clone https://github.com/maoxs2/open-grin-pool.git pool
+git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool && go build .
 
 # config
