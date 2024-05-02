@@ -80,8 +80,6 @@ The `agent` is optional. Pool treat it as the miner's rig name.
 - multi Backend (failover)
 - multi Port (with different difficulties)
 
-Please **donation**:
-**LTC: LXxqHY4StG79nqRurdNNt1wF2yCf4Mc986**
 
 ## License
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmaoxs2%2Fopen-grin-pool.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmaoxs2%2Fopen-grin-pool?ref=badge_large)
