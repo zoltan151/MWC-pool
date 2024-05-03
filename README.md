@@ -25,7 +25,7 @@ sudo apt-get -y install build-essential cmake git libgit2-dev clang libncurses-d
 cd /
 mkdir MWC-Pool
 cd MWC-Pool
-git clone https://github.com/mwcproject/mwc-node
+git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
