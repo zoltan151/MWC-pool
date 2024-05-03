@@ -13,6 +13,24 @@ Latest is tested under grin's usernet.
 - record the miner's pay method (manually sent coin by pool maintainer)
 - pool status
 
+
+### Install MWC node and wallet
+```bash
+sudo apt-get -y update && sudo apt-get -y upgrade
+sudo apt-get -y install curl
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+rustup update
+sudo apt-get -y install build-essential cmake git libgit2-dev clang libncurses-dev libncurses5-dev libncursesw5-dev zlib1g-dev pkg-config libssl-dev llvm zlib1g-dev linux-headers-$(uname -r)
+cd /
+mkdir MWC-Pool
+cd MWC-Pool
+git clone https://github.com/mwcproject/mwc-node
+cd mwc-node
+cargo build --release
+mwc server config
+```
+
+
 ### Usage
 
 ```bash
