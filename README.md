@@ -40,9 +40,10 @@ cp target/release/mwc ./mwc
 ./mwc server run
 
 # install dependencies
-sudo apt-get -y install redis-server
+sudo apt-get -y install redis-server apache2 
 
 # ready
+sudo ufw allow 'Apache'
 git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool && go build .
 
