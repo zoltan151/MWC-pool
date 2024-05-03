@@ -51,7 +51,8 @@ cd pool && go build .
 vi config.json
 
 # start
-./open-grin-pool 
+./open-grin-pool
+sudo systemctl restart apache2
 
 ```
 
