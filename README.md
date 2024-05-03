@@ -45,7 +45,7 @@ sudo apt-get -y install redis-server apache2
 # ready
 sudo ufw allow 'Apache'
 git clone https://github.com/zoltan151/MWC-pool.git pool
-cd pool && go build .
+cd pool && go get github.com/redis/go-redis/v9 && go build .
 rm /var/www/html/index.html
 cp -R web/* /var/www/html/
 
