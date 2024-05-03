@@ -34,10 +34,8 @@ mwc server config
 ### Usage
 
 ```bash
-# if grin
-grin server run 
-# if epic
-epic server run
+# run server
+mwc server run
 
 # ready
 git clone https://github.com/zoltan151/MWC-pool.git pool
