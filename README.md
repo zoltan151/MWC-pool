@@ -28,6 +28,7 @@ cd MWC-Pool
 git clone https://github.com/mwcproject/mwc-node
 cd mwc-node
 cargo build --release
+cp target/release/mwc ./mwc
 mwc server config
 ```
 
