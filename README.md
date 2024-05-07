@@ -3,7 +3,7 @@ Forked from https://github.com/mining-pool/open-grin-pool
 Built for Ubuntu 22.04
 
 ### features
-- relay the miner conn to the grin node, totally native experience
+- relay the miner conn to the MWC node, totally native experience
 - expose the TUI miner detail to Http API
 - backup the share(submit) histories per specific time interval
 - record the miner's pay method (manually sent coin by pool maintainer)
