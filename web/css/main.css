@@ -36,6 +36,10 @@ h6 {
 	background-color: #f3f4f2 !important;
 }
 
+.bg-violet {
+  background: rgb(158,0,231);
+  background: linear-gradient(135deg, rgba(158,0,231,1) 0%, rgba(51,0,204,1) 100%);
+}
 
 .bg-primary {
     background-color: #9e00e7;
