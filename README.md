@@ -58,6 +58,7 @@ cp target/release/mwc-wallet ./mwc-wallet
 sudo apt-get -y install redis-server apache2 
 
 # ready (if using non-standard ports, be sure to allow them through the firewall via 'sudo ufw allow <port #>')
+### there may be several other ports that need to be opened up, which are not included here. Will need to parse through the config / toml files to discover them ###
 sudo ufw allow 'Apache'
 sudo ufw allow http
 sudo ufw allow https
