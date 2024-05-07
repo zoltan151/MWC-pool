@@ -1,6 +1,6 @@
-# MWC-pool 
-Forked from https://github.com/mining-pool/open-grin-pool
-Built for Ubuntu 22.04
+# MWC-Pool: Intro
+- Forked from https://github.com/mining-pool/open-grin-pool
+- Built for Ubuntu 22.04
 
 ### features
 - relay the miner conn to the MWC node, totally native experience
