@@ -14,8 +14,7 @@
 ```bash
 sudo apt-get -y update && sudo apt-get -y upgrade
 sudo apt-get -y install curl
-# curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-snap install rustup
+snap install rustup --classic
 rustup update
 sudo apt-get -y install build-essential cmake git libgit2-dev clang libncurses-dev libncurses5-dev libncursesw5-dev zlib1g-dev pkg-config libssl-dev llvm zlib1g-dev linux-headers-generic
 cd /
