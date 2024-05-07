@@ -10,7 +10,7 @@ Built for Ubuntu 22.04
 - pool status
 
 
-### Install MWC node and wallet
+### Install MWC node
 ```bash
 sudo apt-get -y update && sudo apt-get -y upgrade
 sudo apt-get -y install curl
@@ -26,6 +26,18 @@ cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
 ./mwc server config
+```
+
+
+### Install MWC wallet
+```bash
+
+cd /MWC-Pool
+git clone https://github.com/mwcproject/mwc-wallet.git
+cd mwc-wallet
+cargo build --release
+cp target/release/mwc-wallet ./mwc-wallet
+./mwc-wallet init
 ```
 
 
