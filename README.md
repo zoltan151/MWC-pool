@@ -104,11 +104,19 @@ sudo systemctl restart apache2
 ```
 
 WebAPI:
+
 - `/pool` basic pool status
+        example: curl 127.0.0.1:3333/pool
+  
 - `/revenue` the revenue **last day**, which the pool maintainer has to sent **today**
+        example: curl 127.0.0.1:3333/revenue
+  
 - `/shares` the all miners' shares **today**
+        example: curl 127.0.0.1:3333/shares
+  
 - `/miner/{miner_login}` GET is the miner status
-POST upload the payment method. e.g. ` curl 127.0.0.1:3333/miner/Hello` will get the json of "Hello"'s status. `curl  -X POST -d "{'pass': 'passwordOfHello', 'pm': 'http://<IP>:<PORT>'}" 127.0.0.1:3333/miner/Hello`
+POST upload the payment method. e.g. ` curl 127.0.0.1:3333/miner/MinerWorkerName` will get the json of "MinerWorkerName"'s status. 
+        example: curl  -X POST -d "{'pass': 'passwordOfMinerWorkerName', 'pm': 'http://<IP>:<PORT>'}" 127.0.0.1:3333/miner/MinerWorkerName`
 
 The maintainer can manually use this command to send the coin `/MWC-Pool/mwc-wallet/mwc-wallet send -d http://<IP>:<PORT>`. Note, ensure the receiver online before your sending.
 
