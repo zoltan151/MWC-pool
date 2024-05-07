@@ -35,8 +35,6 @@ git clone https://github.com/mwcproject/mwc-wallet.git
 cd mwc-wallet
 cargo build --release
 cp target/release/mwc-wallet ./mwc-wallet
-/MWC-Pool/mwc-wallet/mwc-wallet init
-### enter new password for the wallet ###
 ```
 
 
@@ -58,16 +56,26 @@ nano ~/.mwc/main/mwc-wallet.toml
 ```
 
 
-### Usage
-
+### Run MWC node
 ```bash
-### for below commands for mwc-node and mwc-wallet, need to find a way to run them in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention or necessitating a detached screen session ###
-# run server
 nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
-# run wallet
+```
+
+
+### Initialize MWC wallet
+```bash
+/MWC-Pool/mwc-wallet/mwc-wallet init
+### enter new password for the wallet ###
+```
+
+### Run MWC wallet in listen mode
+```bash
 nohup /MWC-Pool/mwc-wallet/mwc-wallet listen > /dev/null 2>&1 &
 ### enter mwc-wallet password created during init stage
+```
 
+
+### Install the Pool Environment
 
 # install dependencies
 sudo apt-get -y install redis-server apache2 nodejs npm
