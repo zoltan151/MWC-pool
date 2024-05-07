@@ -81,6 +81,7 @@ cat /MWC-Pool/mwc-wallet/password.txt | nohup /MWC-Pool/mwc-wallet/mwc-wallet li
 ### install dependencies
 ```bash
 sudo apt-get -y install redis-server apache2 nodejs npm
+snap install go --classic
 ```
 
 ### ready (if using non-standard ports, be sure to allow them through the firewall via 'sudo ufw allow <port #>')
