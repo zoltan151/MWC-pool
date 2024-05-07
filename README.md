@@ -64,14 +64,14 @@ nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
 
 ### Initialize MWC wallet
 ```bash
-/MWC-Pool/mwc-wallet/mwc-wallet init
-### enter new password for the wallet ###
+### creates a "password" file. Enter whatever password you want to use for the wallet moving forward. This file will be passed to the wallet when launched at startup.
+nano /MWC-Pool/mwc-wallet/password.txt
+cat /MWC-Pool/mwc-wallet/password.txt | /MWC-Pool/mwc-wallet/mwc-wallet init
 ```
 
 ### Run MWC wallet in listen mode
 ```bash
-nohup /MWC-Pool/mwc-wallet/mwc-wallet listen > /dev/null 2>&1 &
-### enter mwc-wallet password created during init stage
+cat /MWC-Pool/mwc-wallet/password.txt | nohup /MWC-Pool/mwc-wallet/mwc-wallet listen > /dev/null 2>&1 &
 ```
 
 
