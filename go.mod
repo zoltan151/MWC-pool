@@ -1,4 +1,4 @@
-module github.com/maoxs2/open-grin-pool
+module github.com/zoltan151/MWC-Pool
 
 go 1.12
 
