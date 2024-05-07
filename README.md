@@ -97,6 +97,7 @@ rm /var/www/html/index.html
 cp -R web/* /var/www/html/
 
 # start
+### for below command for MWC-Pool, need to find a way to run them in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention or necessitating a detached screen session ###
 /MWC-Pool/pool/MWC-Pool
 sudo systemctl restart apache2
 
