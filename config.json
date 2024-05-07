@@ -23,8 +23,8 @@
   },
   "node": {
     "address": "127.0.0.1",
-    "api_port": 23413,
-    "stratum_port": 23416,
+    "api_port": 3413,
+    "stratum_port": 3416,
     "auth_user": "grin",
     "auth_pass": "xVbM1DS6MTPr3f5qwWCe",
     "diff": 50000,
@@ -33,7 +33,7 @@
   "wallet": {
     "address": "127.0.0.1",
     "owner_api_version": "v1",
-    "owner_api_port": 23415,
+    "owner_api_port": 3420,
     "auth_user": "grin",
     "auth_pass": "xVbM1DS6MTPr3f5qwWCe"
   },
