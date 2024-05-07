@@ -113,6 +113,9 @@ WebAPI:
   
 - `/shares` all the miners' shares **today**
         example: curl 127.0.0.1:3333/shares
+
+  - `/blocks` all the miners' blocks **today**
+        example: curl 127.0.0.1:3333/blocks
   
 - `/miner/{miner_login}` GET is the miner status
 POST upload the payment method. e.g. ` curl 127.0.0.1:3333/miner/MinerWorkerName` will get the json of "MinerWorkerName"'s status. 
