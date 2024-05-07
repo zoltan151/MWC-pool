@@ -25,6 +25,7 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
+nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
 ```
 
 
@@ -63,9 +64,9 @@ nano ~/.mwc/main/mwc-wallet.toml
 ```bash
 ### for below commands for mwc-node and mwc-wallet, need to find a way to run them in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention or necessitating a detached screen session ###
 # run server
-/MWC-Pool/mwc-node/mwc server run
+nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
 # run wallet
-/MWC-Pool/mwc-wallet/mwc-wallet listen
+nohup /MWC-Pool/mwc-wallet/mwc-wallet listen > /dev/null 2>&1 &
 ### enter mwc-wallet password created during init stage
 
 
