@@ -74,7 +74,7 @@ cp -R web/* /var/www/html/
 nano config.json
 
 # start
-./open-grin-pool
+/MWC-Pool/pool/open-grin-pool
 sudo systemctl restart apache2
 
 ```
