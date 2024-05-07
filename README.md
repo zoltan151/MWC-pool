@@ -64,6 +64,7 @@ sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow 4444
 sudo ufw enable
+cd /MWC-Pool
 git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool && go build .
 rm /var/www/html/index.html
