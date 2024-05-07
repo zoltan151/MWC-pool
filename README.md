@@ -52,6 +52,7 @@ cp target/release/mwc-wallet ./mwc-wallet
 /MWC-Pool/mwc-node/mwc server run
 # run wallet
 /MWC-Pool/mwc-wallet/mwc-wallet listen
+### enter mwc-wallet password created during init stage
 
 
 # install dependencies
