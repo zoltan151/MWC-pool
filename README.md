@@ -25,22 +25,30 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
-
-### for below command, need to find a way to run this in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention ###
-./mwc server config
 ```
 
 
 ### Install MWC wallet
 ```bash
-
 cd /MWC-Pool
 git clone https://github.com/mwcproject/mwc-wallet.git
 cd mwc-wallet
 cargo build --release
 cp target/release/mwc-wallet ./mwc-wallet
-./mwc-wallet init
+/MWC-Pool/mwc-wallet/mwc-wallet init
 ### enter new password for the wallet ###
+```
+
+
+### Configure MWC node
+```bash
+nano ~/.mwc/main/mwc-server.toml
+```
+
+
+### Configure MWC wallet
+```bash
+nano ~/.mwc/main/mwc-wallet.toml
 ```
 
 
