@@ -79,10 +79,13 @@ cat /MWC-Pool/mwc-wallet/password.txt | nohup /MWC-Pool/mwc-wallet/mwc-wallet li
 # Install the Pool Environment
 
 ### install dependencies
+```bash
 sudo apt-get -y install redis-server apache2 nodejs npm
+```
 
 ### ready (if using non-standard ports, be sure to allow them through the firewall via 'sudo ufw allow <port #>')
 #### there may be several other ports that need to be opened up, which are not included here. Will need to parse through the config / toml files to discover them ###
+```bash
 sudo ufw allow 'Apache'
 sudo ufw allow http
 sudo ufw allow https
@@ -92,24 +95,28 @@ sudo ufw enable
 cd /MWC-Pool
 git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool
+```
 
 ### configure
 #### Need to figure out how to pass the api keys from the node and wallet config files to the pool's config.json, for the auth_pass values under the "node" and "wallet" sections. Ideally we can do this using their local file paths, rather than plain text. They are located at:
 ### ~/.mwc/main/.api_secret
 ### ~/.mwc/main/.foreign_api_secret
 ### ~/.mwc/main/.owner_api_secret
+```bash
 nano config.json
+```
 
 ### build
+```bash
 go build .
 rm /var/www/html/index.html
 cp -R web/* /var/www/html/
+```
 
 # start
-### for below command for MWC-Pool, need to find a way to run them in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention or necessitating a detached screen session ###
-/MWC-Pool/pool/MWC-Pool
+```bash
+nohup /MWC-Pool/pool/MWC-Pool > /dev/null 2>&1 &
 sudo systemctl restart apache2
-
 ```
 
 WebAPI:
@@ -141,7 +148,7 @@ WebPage:
 
 #### For server
 
-Yyou can keep all default except `auth_pass`. The password can be found in the `.api_secret` file. 
+You can keep all default except `auth_pass`. The password can be found in the `.api_secret` file. 
     
 knowledge about this, check [here](https://github.com/mimblewimble/grin/blob/master/doc/api/api.md)
 
