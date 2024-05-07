@@ -82,12 +82,15 @@ sudo ufw allow 3333
 sudo ufw enable
 cd /MWC-Pool
 git clone https://github.com/zoltan151/MWC-pool.git pool
-cd pool && go build .
+cd pool
+
+# configure
+nano config.json
+
+# build
+go build .
 rm /var/www/html/index.html
 cp -R web/* /var/www/html/
-
-# config
-nano config.json
 
 # start
 /MWC-Pool/pool/open-grin-pool
