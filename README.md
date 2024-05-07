@@ -25,7 +25,6 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
-nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
 ```
 
 
