@@ -37,8 +37,12 @@ cp target/release/mwc ./mwc
 # install dependencies
 sudo apt-get -y install redis-server apache2 
 
-# ready
+# ready (if using non-standard ports, be sure to allow them through the firewall via 'sudo ufw allow <port #>')
 sudo ufw allow 'Apache'
+sudo ufw allow http
+sudo ufw allow https
+sudo ufw allow 4444
+sudo ufw enable
 git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool && go build .
 rm /var/www/html/index.html
