@@ -25,6 +25,8 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
+
+### for below command, need to find a way to run this in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention ###
 ./mwc server config
 ```
 
@@ -38,14 +40,19 @@ cd mwc-wallet
 cargo build --release
 cp target/release/mwc-wallet ./mwc-wallet
 ./mwc-wallet init
+### enter new password for the wallet ###
 ```
 
 
 ### Usage
 
 ```bash
+### for below commands for mwc-node and mwc-wallet, need to find a way to run them in the background, rather than the foreground. That way we can continue with other scripts, as well as set the node to launch at startup without manual intervention or necessitating a detached screen session ###
 # run server
-./mwc server run
+/MWC-Pool/mwc-node/mwc server run
+# run wallet
+/MWC-Pool/mwc-wallet/mwc-wallet listen
+
 
 # install dependencies
 sudo apt-get -y install redis-server apache2 
