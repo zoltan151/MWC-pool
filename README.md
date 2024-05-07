@@ -97,7 +97,7 @@ rm /var/www/html/index.html
 cp -R web/* /var/www/html/
 
 # start
-/MWC-Pool/pool/open-grin-pool
+/MWC-Pool/pool/MWC-Pool
 sudo systemctl restart apache2
 
 ```
