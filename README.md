@@ -111,7 +111,7 @@ WebAPI:
 - `/revenue` the revenue **last day**, which the pool maintainer has to sent **today**
         example: curl 127.0.0.1:3333/revenue
   
-- `/shares` the all miners' shares **today**
+- `/shares` all the miners' shares **today**
         example: curl 127.0.0.1:3333/shares
   
 - `/miner/{miner_login}` GET is the miner status
