@@ -35,3 +35,17 @@ h6 {
 .list-group-item {
 	background-color: #f3f4f2 !important;
 }
+
+
+.bg-primary {
+    background-color: #9e00e7;
+}
+    --medium-blue: #30c;
+    --dark-violet: #9e00e7;
+    --dirty-highlighter: #cf3;
+    --dim-grey: #666;
+    --mid-grey: #828282;
+    --white: white;
+    --splashy-blue: #3898ec;
+    --black: black;
+    --splash-blue: rgba(56,152,236,.5)
