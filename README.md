@@ -87,6 +87,8 @@ snap install go --classic
 ### ready (if using non-standard ports, be sure to allow them through the firewall via 'sudo ufw allow <port #>')
 #### there may be several other ports that need to be opened up, which are not included here. Will need to parse through the config / toml files to discover them ###
 ```bash
+echo >> /etc/apache2/apache2.conf
+echo 'ServerName localhost' >> /etc/apache2/apache2.conf
 sudo ufw allow 'Apache'
 sudo ufw allow http
 sudo ufw allow https
