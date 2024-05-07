@@ -85,6 +85,10 @@ git clone https://github.com/zoltan151/MWC-pool.git pool
 cd pool
 
 # configure
+### Need to figure out how to pass the api keys from the node and wallet config files to the pool's config.json, for the auth_pass values. Ideally we can do this using their local file paths, rather than plain text. They are located at:
+### ~/.mwc/main/.api_secret
+### ~/.mwc/main/.foreign_api_secret
+### ~/.mwc/main/.owner_api_secret
 nano config.json
 
 # build
