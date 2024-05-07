@@ -110,17 +110,18 @@ WebAPI:
 - `/miner/{miner_login}` GET is the miner status
 POST upload the payment method. e.g. ` curl 127.0.0.1:3333/miner/Hello` will get the json of "Hello"'s status. `curl  -X POST -d "{'pass': 'passwordOfHello', 'pm': 'http://<IP>:<PORT>'}" 127.0.0.1:3333/miner/Hello`
 
-The maintainer can manually use this command to send the coin `grin wallet send -d http://<IP>:<PORT>`. Note, ensure the receiver online before your sending.
+The maintainer can manually use this command to send the coin `/MWC-Pool/mwc-wallet/mwc-wallet send -d http://<IP>:<PORT>`. Note, ensure the receiver online before your sending.
 
 WebPage:
 - replace the API address to your API in the web/config.js
 - move all files in web to your Nginx/Apache folder
+- accessible via web browser at http://localhost/
 
 ### Config
 
 #### For server
 
-If you are using epic you can keep all default except `auth_pass`. The password can be found in the `.api_secret` file. 
+Yyou can keep all default except `auth_pass`. The password can be found in the `.api_secret` file. 
     
 knowledge about this, check [here](https://github.com/mimblewimble/grin/blob/master/doc/api/api.md)
 
