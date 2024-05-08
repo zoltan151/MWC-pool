@@ -93,7 +93,10 @@ sudo ufw allow 'Apache'
 sudo ufw allow http
 sudo ufw allow https
 sudo ufw allow 4444
-sudo ufw allow 3333
+sudo ufw allow 3333 
+sudo ufw allow 3413
+sudo ufw allow 3415
+sudo ufw allow 3416
 sudo ufw enable
 cd /MWC-Pool
 git clone https://github.com/zoltan151/MWC-pool.git pool
