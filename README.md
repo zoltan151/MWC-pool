@@ -25,6 +25,7 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
+/MWC-Pool/mwc-node/mwc server run
 ```
 
 
