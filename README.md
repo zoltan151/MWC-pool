@@ -25,7 +25,9 @@ git clone https://github.com/mwcproject/mwc-node.git
 cd mwc-node
 cargo build --release
 cp target/release/mwc ./mwc
-/MWC-Pool/mwc-node/mwc server run
+nohup /MWC-Pool/mwc-node/mwc server run > /dev/null 2>&1 &
+sleep 10
+killall mwc
 ```
 
 
@@ -41,13 +43,13 @@ cp target/release/mwc-wallet ./mwc-wallet
 
 ### Configure MWC node
 ```bash
-nano ~/.mwc/main/mwc-server.toml
 ### need to change "enable_stratum_server = false" to enable_stratum_server = true"
 ### need to uncomment the following:
 # block_accepted_url = "http://127.0.0.1:8080/acceptedblock"
 # tx_received_url = "http://127.0.0.1:8080/tx"
 # header_received_url = "http://127.0.0.1:8080/header"
 # block_received_url = "http://127.0.0.1:8080/block"
+nano ~/.mwc/main/mwc-server.toml
 ```
 
 
