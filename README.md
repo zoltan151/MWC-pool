@@ -126,6 +126,7 @@ cp -R web/* /var/www/html/
 ```bash
 nohup /MWC-Pool/pool/MWC-Pool > /dev/null 2>&1 &
 sudo systemctl restart apache2
+systemctl daemon-reload
 ```
 
 WebAPI:
