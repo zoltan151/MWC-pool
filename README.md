@@ -102,7 +102,7 @@ sudo ufw allow 3415
 sudo ufw allow 3416
 sudo ufw enable
 cd /MWC-Pool
-git clone https://github.com/zoltan151/MWC-pool.git pool
+git clone https://github.com/Mute-Whistle/MWC-pool.git pool
 cd pool
 ```
 
